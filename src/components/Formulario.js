@@ -47,32 +47,32 @@ const Formulario = () => {
 
     return (
         <Fragment>
-            <h2>Crear Cita</h2>
+            <h2>Create Appointmen</h2>
 
-            { error ? <p className="alerta-error">Todos los campos son obligatorios</p> : null }
+            { error ? <p className="alerta-error">All the fields are required</p> : null }
 
             <form onSubmit={submitCita} >
-                <label>Nombre Mascota</label>
+                <label>Pet's Name</label>
                 <input 
                     type="text"
                     name="mascota"
                     className="u-full-width"
-                    placeholder="Nombre Mascota"
+                    placeholder="Pet's Name"
                     onChange={actualizarState}
                     value={mascota}
                 />
 
-                <label>Nombre Dueño</label>
+                <label>Owner's Name</label>
                 <input 
                     type="text"
                     name="propietario"
                     className="u-full-width"
-                    placeholder="Nombre  Dueño de la mascota"
+                    placeholder="Owner's Name"
                     onChange={actualizarState}
                     value={propietario}
                 />
 
-                <label>Fecha</label>
+                <label>Date</label>
                 <input 
                     type="date"
                     name="fecha"
@@ -81,7 +81,7 @@ const Formulario = () => {
                     value={fecha}
                 />
 
-                <label>Hora</label>
+                <label>Time</label>
                 <input 
                     type="time"
                     name="hora"
@@ -90,7 +90,7 @@ const Formulario = () => {
                     value={hora}
                 />
 
-                <label>Síntomas</label>
+                <label>Symptoms</label>
                 <textarea
                     className="u-full-width"
                     name="sintomas"
